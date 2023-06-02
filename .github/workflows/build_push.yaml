@@ -50,6 +50,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.CONTAINER_NAME }}:${{ steps.meta.outputs.tags }}
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.CONTAINER_NAME }}:latest
+            # ${{ secrets.DOCKER_USERNAME }}/${{ env.CONTAINER_NAME }}:${{ steps.meta.outputs.tags }}
+            # ${{ secrets.DOCKER_USERNAME }}/${{ env.CONTAINER_NAME }}:latest
+            ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

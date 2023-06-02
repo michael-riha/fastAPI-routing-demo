@@ -9,6 +9,12 @@ https://hub.docker.com/repository/docker/miriha/multi-route/
 
 `docker compose push`
 
+### tag for `github`-action
+
+`git tag 'v0.2'`
+`git push origin v0.2`
+
+
 ## Different Routes
 
 http://localhost:8090/
